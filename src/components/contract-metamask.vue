@@ -1,9 +1,9 @@
 <template>
-    <p>Hello</p>
+    <p>vvv</p>
 </template>
 <script>
 export default {
- name: 'hello-metamask'
+ name: 'contract-metamask'
 }
 </script>
 <style scoped>

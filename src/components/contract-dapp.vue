@@ -1,14 +1,19 @@
 <template>
-    <hello-metamask/>
+    <contract-metamask/>
 </template>
 <script>
-import HelloMetamask from '@/components/contract-metamask'
+import ContractMetamask from '@/components/contract-metamask'
 export default {
  name: 'contract-dapp',
+ beforeCreate () {
+    console.log('registerWeb3 Action dispatched from contract-dapp.vue')
+    this.$store.dispatch('registerWeb3')
+  },
  components: {
- 'hello-metamask': HelloMetamask
+ 'contract-metamask': ContractMetamask
  }
 }
 </script>
+
 <style scoped>
 </style>
